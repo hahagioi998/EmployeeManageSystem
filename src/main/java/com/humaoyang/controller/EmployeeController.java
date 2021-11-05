@@ -31,7 +31,7 @@ public class EmployeeController {
     /*
      * @Valid表示数据进行数据校验
      */
-    public Msg addEmp(@Valid  Employee emp, BindingResult bindingResult){
+    public Msg addEmp(Employee emp){
         employeeService.addEmp(emp);
         return Msg.success();
     }
